@@ -4,32 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrossel Circular Horizontal</title>
-  <!-- Vincula o arquivo CSS externo -->
+  <title>A Poesia do Vetor Circular</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>Carrossel Circular</h1>
-  <p>Estrutura modular com array circular</p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Modulus</div>
+    <div class="nav-links">
+      <a href="#demo">Demonstração</a>
+      <a href="#cases">Casos Reais</a>
+    </div>
+  </nav>
 
-  <!-- Container horizontal -->
-  <div class="carousel-container">
-    <div class="card">Slide A</div>
-    <div class="card">Slide B</div>
-    <div class="card">Slide C</div>
-    <div class="card">Slide D</div>
-    <div class="card">Slide E</div>
-  </div>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>A elegância discreta da <span>aritmética modular</span>.</h1>
+    <p>Por que carrosséis comuns dependem de condicionais rígidas quando podemos abraçar a geometria fluida de um vetor
+      circular? Um estudo visual sobre loops elegantes e estruturas infinitas.</p>
+    <a href="#demo" class="btn-hero">Iniciar demonstração</a>
+  </header>
 
-  <!-- Botões de controle -->
-  <div class="controls">
-    <button id="prev">◀ Voltar</button>
-    <button id="next">Avançar ▶</button>
-  </div>
+  <!-- Seção da Demo (O Carrossel Humanista Dark) -->
+  <section id="demo" class="carousel-section">
+    <div class="section-header">
+      <h2>O movimento perpétuo</h2>
+      <p>Interaja com os controles abaixo para observar os vizinhos convergindo e divergindo através do operador de
+        resto.</p>
+    </div>
 
-  <!-- Vincula o arquivo JavaScript externo (no final do body) -->
+    <div class="carousel-container">
+      <div class="card">Ensaio I</div>
+      <div class="card">Ensaio II</div>
+      <div class="card">Ensaio III</div>
+      <div class="card">Ensaio IV</div>
+      <div class="card">Ensaio V</div>
+    </div>
+
+    <div class="controls">
+      <button id="prev">
+        <span class="btn-label">Anterior</span>
+        <span class="btn-formula">(j - 1 + N) % N</span>
+      </button>
+      <button id="next">
+        <span class="btn-label">Próximo</span>
+        <span class="btn-formula">(j + 1) % N</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 🚀 NOVA SEÇÃO: Casos de Uso e Big Techs -->
+  <section id="cases" class="cases-section">
+    <div class="cases-header">
+      <h2>Aplicações no Mundo Real</h2>
+      <p>O vetor circular não serve apenas para interfaces bonitas. Ele resolve problemas de infraestrutura em escala
+        global.</p>
+    </div>
+
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-badge">Streaming</div>
+        <h3>Netflix & Spotify</h3>
+        <h4>Buffers de Reprodução</h4>
+        <p>Ao carregar uma música ou filme, os dados de áudio e vídeo são baixados continuamente em uma <strong>Fila
+            Circular (Ring Buffer)</strong>. Enquanto o player consome o início do array, a rede escreve no fim de forma
+          perpétua e com memória fixa O(1), evitando alocações desnecessárias.</p>
+      </div>
+
+      <div class="case-card">
+        <div class="case-badge">Redes & Cloud</div>
+        <h3>Amazon AWS & Cloudflare</h3>
+        <h4>Consistent Hashing</h4>
+        <p>Para distribuir milhões de requisições entre servidores sem derrubar o sistema, as nuvens organizam os
+          endereços IPs dos servidores em um <strong>Anel Lógico (Hash Ring)</strong>. O algoritmo usa o operador de
+          resto para mapear para qual servidor aquela requisição deve viajar de forma circular.</p>
+      </div>
+
+      <div class="case-card">
+        <div class="case-badge">Sistemas Operacionais</div>
+        <h3>Linux, Windows & macOS</h3>
+        <h4>Escalonamento Round-Robin</h4>
+        <p>Como a sua CPU alterna entre o navegador, o VS Code e o Discord tão rápido que parece simultâneo? O sistema
+          operacional organiza os processos ativos em uma estrutura circular, dando algumas frações de segundo para cada
+          um antes de passar para o próximo do ponteiro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Textual - Estilo Artigo de Revista -->
+  <section class="essay-section">
+    <div class="essay-content">
+      <h3>Complexidade sem esforço</h3>
+      <p>Desenvolver interfaces não precisa ser um exercício de acumular estruturas de controle. Ao aplicar princípios
+        clássicos da ciência da computação diretamente no DOM, eliminamos o atrito do código.</p>
+      <p>O cálculo de vizinhos ocorre em tempo constante <code>O(1)</code>, garantindo que a transição entre o primeiro
+        e o último elemento seja tão natural quanto virar a página de um livro físico.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Criado para demonstrar que a matemática por trás da tela também pode ser orgânica.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 
